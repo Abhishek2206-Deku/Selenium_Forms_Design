@@ -9,15 +9,15 @@ import org.testng.annotations.Test;
 
 import selenium_framework_design.BaseTest.BaseTest;
 import selenium_framework_design.BaseTest.DriverManager;
+import selenium_framework_design_AbstractComponents.AbstractComponents;
 import seleniumdesign.selenium_framework_design.pom.LoginPage;
 
 public class StandaloneLoginTest extends BaseTest {
-
+AbstractComponents ac=new AbstractComponents(DriverManager.getDriver());
 	@Test
 	public void loginForm() throws IOException {
 		WebDriver driver = DriverManager.getDriver();
-		driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
-
+		ac.ApplicationUrl();
 		LoginPage login = new LoginPage(driver);
 
 		login.LoginBtn();
