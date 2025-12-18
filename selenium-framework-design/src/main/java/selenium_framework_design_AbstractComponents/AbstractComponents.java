@@ -8,6 +8,10 @@ public class AbstractComponents {
 
 	public WebDriver driver;
 
+	public  void ApplicationUrl() {
+		driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
+	}
+	
 	public AbstractComponents(WebDriver driver) {
 		this.driver = driver;
 	}

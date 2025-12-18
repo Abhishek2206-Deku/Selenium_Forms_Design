@@ -11,15 +11,17 @@ import org.testng.annotations.Test;
 
 import selenium_framework_design.BaseTest.BaseTest;
 import selenium_framework_design.BaseTest.DriverManager;
+import selenium_framework_design_AbstractComponents.AbstractComponents;
 import seleniumdesign.selenium_framework_design.pom.FormsPage;
 
 public class StandaloneFormTest extends BaseTest {
 
+	AbstractComponents ac=new AbstractComponents(DriverManager.getDriver());
 	@Test(dataProvider = "getFormsData", groups = { "FormValidation" })
 	public void fillFormTest(HashMap<String, String> input) throws IOException {
 		// WebDriver Initialization and launching Web application
 		WebDriver driver = DriverManager.getDriver();
-		driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
+		ac.ApplicationUrl();
 
 		FormsPage form = new FormsPage(driver);
 
