@@ -1,0 +1,38 @@
+package seleniumdesign.selenium_framework_design;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import selenium_framework_design.BaseTest.BaseTest;
+import seleniumdesign.selenium_framework_design.pom.LoginPage;
+
+public class StandaloneLoginTest extends BaseTest {
+	
+	 @BeforeMethod
+	    public void setUp() throws IOException {
+	        driver = DriverIntialization();
+	    }
+
+	@Test
+	public void loginForm() throws IOException {
+
+	
+		driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
+
+		LoginPage login = new LoginPage(driver);
+
+		login.LoginBtn();
+		login.NewUserBtn();
+		login.FirstName("Izuku");
+		login.LastName("Midoriya");
+		login.UserName("midoriya9@gmail.com");
+		login.Password("Deku@9");
+		login.RegisterBtn();
+
+		login.loginEmail("midoriya9@gmail.com");
+		login.LoginPassword("Deku@9");
+		login.LoginClick();
+	}
+}

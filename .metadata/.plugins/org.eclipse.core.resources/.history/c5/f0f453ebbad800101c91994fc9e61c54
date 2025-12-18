@@ -1,0 +1,68 @@
+package seleniumdesign.selenium_framework_design;
+
+import java.io.IOException;
+import java.util.HashMap;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import selenium_framework_design.BaseTest.BaseTest;
+import selenium_framework_design.BaseTest.DriverManager;
+import seleniumdesign.selenium_framework_design.pom.FormsPage;
+
+public class StandaloneFormTest extends BaseTest {
+
+	@Test(dataProvider = "getFormsData", groups = { "FormValidation" })
+	public void fillFormTest(HashMap<String, String> input) throws IOException {
+		// WebDriver Initialization and launching Web application
+		WebDriver driver = DriverManager.getDriver();
+		driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
+
+		FormsPage form = new FormsPage(driver);
+
+		form.enterName(input.get("name"));
+		form.enterEmail(input.get("email"));
+		form.selectGender();
+		form.enterMobile(input.get("mobile"));
+		form.enterSubject(input.get("subject"));
+		form.selectSports();
+		form.enterDOB(input.get("DOB"));
+		form.uploadPicture(input.get("uploadPicture"));
+		form.currentAddress(input.get("currentAddress"));
+		form.selectState(input.get("state"));
+		form.selectCity(input.get("city"));
+		form.submitForm();
+
+	}
+
+	@DataProvider
+	public Object[][] getFormsData() {
+
+		HashMap<String, String> map1 = new HashMap<String, String>();
+		map1.put("name", "Abhishek Samal");
+		map1.put("email", "abhishek@gmail.com");
+		map1.put("mobile", "987654321");
+		map1.put("subject", "Automation Testing");
+		map1.put("DOB", "05/12/2025");
+		map1.put("uploadPicture", "C:\\Users\\abhis\\OneDrive\\Pictures\\Saved Pictures\\RangeRover.jpeg");
+		map1.put("currentAddress", "Whitefield, Bengaluru");
+		map1.put("state", "Rajasthan");
+		map1.put("city", "Meerut");
+
+		HashMap<String, String> map2 = new HashMap<String, String>();
+		map2.put("name", "Abhishek Samal");
+		map2.put("email", "abhishek@gmail.com");
+		map2.put("mobile", "987654321");
+		map2.put("subject", "Automation Testing");
+		map2.put("DOB", "05/12/2025");
+		map2.put("uploadPicture", "C:\\Users\\abhis\\OneDrive\\Pictures\\Saved Pictures\\RangeRover.jpeg");
+		map2.put("currentAddress", "Whitefield, Bengaluru");
+		map2.put("state", "Rajasthan");
+		map2.put("city", "Meerut");
+
+		return new Object[][] { { map1 }, { map2 } };
+
+	}
+}

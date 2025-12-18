@@ -1,0 +1,37 @@
+package seleniumdesign.selenium_framework_design;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import selenium_framework_design.BaseTest.BaseTest;
+import selenium_framework_design.BaseTest.DriverManager;
+import seleniumdesign.selenium_framework_design.pom.FormsPage;
+
+public class StandaloneFormTest extends BaseTest {
+
+	@Test
+	public void fillFormTest() throws IOException {
+		// WebDriver Initialization and launching Web application
+		WebDriver driver = DriverManager.getDriver();
+		driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
+
+		FormsPage form = new FormsPage(driver);
+
+		form.enterName("Abhishek Samal");
+		form.enterEmail("abhishek@gmail.com");
+		form.selectGender();
+		form.enterMobile("9876543210");
+		form.enterSubject("Automation Testing");
+		form.selectSports();
+		form.enterDOB("05/12/2025");
+		form.uploadPicture("C:\\Users\\abhis\\OneDrive\\Pictures\\Saved Pictures\\RangeRover.jpeg");
+		form.currentAddress("Whitefield, Bengaluru");
+		form.selectState("Rajasthan");
+		form.selectCity("Meerut");
+		form.submitForm();
+
+	}
+}

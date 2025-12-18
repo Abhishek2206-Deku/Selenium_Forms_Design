@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Abhishek Samal",
+		"email":"abhishek@gmail.com",
+		"mobile":"987654321",
+		"subject", "Automation Testing"
+		"DOB":"05/12/2025",
+		"uploadPicture": "C:\\Users\\abhis\\OneDrive\\Pictures\\Saved Pictures\\RangeRover.jpeg",
+		"currentAddress": "Whitefield, Bengaluru",
+		"state": "Rajasthan",
+		"city":"Meerut"
+		
+	},
+	
+	{
+		       "name": "Goutam Mallik",
+				"email":"goutam@gmail.com",
+				"mobile":"987651234",
+				"subject", "Java Development"
+				"DOB":"06/02/2000",
+				"uploadPicture": "C:\\Users\\abhis\\OneDrive\\Pictures\\Saved Pictures\\RangeRover.jpeg",
+				"currentAddress": "Cuttack, Odisha",
+				"state": "Rajasthan",
+				"city":"Meerut"
+	}
+]

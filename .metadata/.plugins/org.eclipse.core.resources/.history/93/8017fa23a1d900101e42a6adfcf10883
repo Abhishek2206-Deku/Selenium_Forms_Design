@@ -1,0 +1,23 @@
+package selenium_framework_design.Data;
+
+import java.awt.List;
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class DataReader {
+
+	public getJsonDataToMap() {
+		
+		//Read Json to String
+		String jsonContent= FileUtils.readFileToString(new File(System.getProperty("user.dir")+"\\src\\test\\java\\selenium_framework_design\\Data\\UserFormsData.json"));
+		
+		//String to HashMap (Jackson Databind -- Dependency)
+		ObjectMapper mapper=new ObjectMapper();
+		List<HashMap<String, String>> data = mapper.readValue (jsonContent, new TypeReference<List<HashMap<String, String>>>() 
+				{});
+	}
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-16T01:39:00 IST" name="Suite" finished-at="2025-12-16T01:39:17 IST" duration-ms="16937">
+    <groups>
+      <group name="FormValidation">
+        <method signature="StandaloneFormTest.fillFormTest(java.util.HashMap)[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneFormTest@791d1f8b]" name="fillFormTest" class="seleniumdesign.selenium_framework_design.StandaloneFormTest"/>
+      </group> <!-- FormValidation -->
+      <group name="LoginFormValidation">
+        <method signature="StandaloneLoginTest.LoginValidation(java.lang.String,java.lang.String)[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneLoginTest@27508c5d]" name="LoginValidation" class="seleniumdesign.selenium_framework_design.StandaloneLoginTest"/>
+      </group> <!-- LoginFormValidation -->
+    </groups>
+    <test started-at="2025-12-16T01:39:00 IST" name="Form Test" finished-at="2025-12-16T01:39:14 IST" duration-ms="13495">
+      <class name="seleniumdesign.selenium_framework_design.StandaloneFormTest">
+        <test-method is-config="true" signature="LaunchAppliction()[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneFormTest@791d1f8b]" started-at="2025-12-16T01:39:01 IST" name="LaunchAppliction" finished-at="2025-12-16T01:39:04 IST" duration-ms="2877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAppliction -->
+        <test-method signature="fillFormTest(java.util.HashMap)[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneFormTest@791d1f8b]" started-at="2025-12-16T01:39:04 IST" name="fillFormTest" data-provider="getFormsData" finished-at="2025-12-16T01:39:07 IST" duration-ms="3653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{city=Meerut, subject=Automation Testing, DOB=05/12/2025, uploadPicture=C:\Users\abhis\OneDrive\Pictures\Saved Pictures\RangeRover.jpeg, name=Abhishek Samal, mobile=987654321, state=Rajasthan, email=abhishek@gmail.com, currentAddress=Whitefield, Bengaluru}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillFormTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneFormTest@791d1f8b]" started-at="2025-12-16T01:39:07 IST" name="tearDown" finished-at="2025-12-16T01:39:08 IST" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchAppliction()[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneFormTest@791d1f8b]" started-at="2025-12-16T01:39:08 IST" name="LaunchAppliction" finished-at="2025-12-16T01:39:10 IST" duration-ms="1828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAppliction -->
+        <test-method signature="fillFormTest(java.util.HashMap)[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneFormTest@791d1f8b]" started-at="2025-12-16T01:39:10 IST" name="fillFormTest" data-provider="getFormsData" finished-at="2025-12-16T01:39:13 IST" duration-ms="3423" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{city=Meerut, subject=Java Development, DOB=06/02/2000, uploadPicture=C:\Users\abhis\OneDrive\Pictures\Saved Pictures\RangeRover.jpeg, name=Goutam Mallik, mobile=987651234, state=Rajasthan, email=goutam@gmail.com, currentAddress=Cuttack, Odisha}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillFormTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneFormTest@791d1f8b]" started-at="2025-12-16T01:39:13 IST" name="tearDown" finished-at="2025-12-16T01:39:14 IST" duration-ms="1042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumdesign.selenium_framework_design.StandaloneFormTest -->
+    </test> <!-- Form Test -->
+    <test started-at="2025-12-16T01:39:00 IST" name="Login Registration Test" finished-at="2025-12-16T01:39:17 IST" duration-ms="16937">
+      <class name="seleniumdesign.selenium_framework_design.StandaloneLoginTest">
+        <test-method is-config="true" signature="LaunchAppliction()[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneLoginTest@27508c5d]" started-at="2025-12-16T01:39:01 IST" name="LaunchAppliction" finished-at="2025-12-16T01:39:04 IST" duration-ms="3159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAppliction -->
+        <test-method signature="LoginValidation(java.lang.String,java.lang.String)[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneLoginTest@27508c5d]" started-at="2025-12-16T01:39:04 IST" name="LoginValidation" data-provider="getLoginData" finished-at="2025-12-16T01:39:07 IST" duration-ms="3532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UzumakiNaruto7@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Uzumaki@07]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneLoginTest@27508c5d]" started-at="2025-12-16T01:39:07 IST" name="tearDown" finished-at="2025-12-16T01:39:08 IST" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchAppliction()[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneLoginTest@27508c5d]" started-at="2025-12-16T01:39:08 IST" name="LaunchAppliction" finished-at="2025-12-16T01:39:09 IST" duration-ms="1661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAppliction -->
+        <test-method signature="LoginValidation(java.lang.String,java.lang.String)[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneLoginTest@27508c5d]" started-at="2025-12-16T01:39:09 IST" name="LoginValidation" data-provider="getLoginData" finished-at="2025-12-16T01:39:12 IST" duration-ms="2722" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[midoriyaizuku9@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Deku@9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneLoginTest@27508c5d]" started-at="2025-12-16T01:39:12 IST" name="tearDown" finished-at="2025-12-16T01:39:12 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchAppliction()[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneLoginTest@27508c5d]" started-at="2025-12-16T01:39:12 IST" name="LaunchAppliction" finished-at="2025-12-16T01:39:14 IST" duration-ms="1188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchAppliction -->
+        <test-method signature="loginForm()[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneLoginTest@27508c5d]" started-at="2025-12-16T01:39:14 IST" name="loginForm" finished-at="2025-12-16T01:39:17 IST" duration-ms="3586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumdesign.selenium_framework_design.StandaloneLoginTest@27508c5d]" started-at="2025-12-16T01:39:17 IST" name="tearDown" finished-at="2025-12-16T01:39:17 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumdesign.selenium_framework_design.StandaloneLoginTest -->
+    </test> <!-- Login Registration Test -->
+  </suite> <!-- Suite -->
+</testng-results>

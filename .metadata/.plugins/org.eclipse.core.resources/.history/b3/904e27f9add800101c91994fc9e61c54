@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="Suite">
+
+	<groups>
+
+		<run>
+			<include name="LoginFormValidation" />
+		</run>
+	</groups>
+	<test thread-count="5" name="Form Test">
+		<classes>
+			<class
+				name="seleniumdesign.selenium_framework_design.StandaloneLoginTest" />
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test thread-count="5" name="Login Registration Test">
+		<classes>
+			<class
+				name="seleniumdesign.selenium_framework_design.StandaloneLoginTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
